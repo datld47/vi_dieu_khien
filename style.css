@@ -1,0 +1,102 @@
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden; /* ⛔ body KHÔNG scroll */
+}
+
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    border: solid;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.header{
+    background-color: green;
+    flex-shrink: 0;
+    display: flex;                 /* căn giữa an toàn */
+    align-items: center;
+    justify-content: center;        
+}
+
+.content{
+    flex: 1;   
+    overflow-y: auto;
+    display: flex;
+    flex-direction: row;
+    min-height: calc(100vh - 120px);
+}
+
+.left-content{
+    flex:1;
+    background-color: yellow;
+}
+
+.center-content{
+    flex:7;
+    background-color: white;
+}
+
+.right-content{
+    flex: 1;
+    background-color: brown;
+}
+
+.footer{
+    background-color: green;
+    flex-shrink: 0;
+    display: flex;                 /* căn giữa an toàn */
+    align-items: center;
+    justify-content: center;        
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    padding: 12px;
+    margin-bottom: 5px;
+    background: white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 15px;   /* tăng chữ */
+    font-weight: 600;     /* chữ đậm hơn */
+}
+
+.menu li:hover {
+    background: #ddd;
+}
+
+.menu li.active {
+    background: #4CAF50;
+    color: white;
+}
+
+.video-resource, .image-resource {
+    max-width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+/* 1. Xử lý Hình ảnh tự co lại */
+.image-resource img {
+    max-width: 50%;
+    height: auto; /* Giữ đúng tỷ lệ hình ảnh */
+    display: block;
+    margin-bottom: 15px;
+}
+
