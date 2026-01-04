@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .left-content{
     flex:1;
-    background-color: yellow;
+    background-color: whitesmoke;
 }
 
 .center-content{
@@ -100,3 +100,10 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 15px;
 }
 
+
+.header_2{
+    text-align: center; 
+    margin:10px; 
+    background:black;
+    color:white;
+}
