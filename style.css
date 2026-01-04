@@ -22,11 +22,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header{
-    background-color: green;
+    background-color:#1A1A1B;
     flex-shrink: 0;
     display: flex;                 /* căn giữa an toàn */
     align-items: center;
     justify-content: center;        
+    color: white;
 }
 
 .content{
@@ -53,11 +54,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer{
-    background-color: green;
+    background-color: #1A1A1B;;
     flex-shrink: 0;
     display: flex;                 /* căn giữa an toàn */
     align-items: center;
     justify-content: center;        
+    color: white;
 }
 
 .menu {
@@ -102,8 +104,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .header_2{
-    text-align: center; 
     margin:10px; 
-    background:black;
+    background:#1A1A1B;;
     color:white;
 }
