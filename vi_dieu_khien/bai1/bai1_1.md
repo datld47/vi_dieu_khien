@@ -1,26 +1,26 @@
 # Lịch sự phát triển vi xử lý
 
-![alt text](/vi_dieu_khien/bai1/imgs/vxl.png)
+<img src="./vi_dieu_khien/bai1/imgs/vxl.png" alt="image">
 
 ---
 
 # Vi điều khiển
 
-![alt text](/vi_dieu_khien/bai1/imgs/vdk.png)
+<img src="./vi_dieu_khien/bai1/imgs/vdk.png" alt="image">
 
 ---
 
 ## Phạm vi ứng dụng vi điều khiển
 
-![alt text](/vi_dieu_khien/bai1/imgs/vdk_1.png)
+<img src="./vi_dieu_khien/bai1/imgs/vdk_1.png" alt="image">
 
 ---
 
-![alt text](/vi_dieu_khien/bai1/imgs/vdk_2.png)
+<img src="./vi_dieu_khien/bai1/imgs/vdk_2.png" alt="image">
 
 ---
 
-![alt text](/vi_dieu_khien/bai1/imgs/vdk_3.png)
+<img src="./vi_dieu_khien/bai1/imgs/vdk_3.png" alt="image">
 
 
 

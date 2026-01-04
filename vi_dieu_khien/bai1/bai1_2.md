@@ -2,24 +2,23 @@
 
 ## Vi điều khiển 8051
 
-![alt text](/vi_dieu_khien/bai1/imgs/vdk_8051.png)
-
+<img src="./vi_dieu_khien/bai1/imgs/vdk_8051.png" alt="image">
 ---
 
 ## Vi điều khiển Pic
 
-![alt text](/vi_dieu_khien/bai1/imgs/vdk_pic.png)
+<img src="./vi_dieu_khien/bai1/imgs/vdk_pic.png" alt="image">
 
 ---
 
 ## Vi điều khiển avr
 
-![alt text](/vi_dieu_khien/bai1/imgs/vdk_avr.png)
+<img src="./vi_dieu_khien/bai1/imgs/vdk_avr.png" alt="image">
 
 ---
 
 ## Vi điều khiển stm
 
-![alt text](/vi_dieu_khien/bai1/imgs/vdk_stm.png)
+<img src="./vi_dieu_khien/bai1/imgs/vdk_stm.png" alt="image">
 
 ---
