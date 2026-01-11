@@ -95,11 +95,27 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* 1. Xử lý Hình ảnh tự co lại */
+
 .image-resource img {
-    max-width: 50%;
+    max-width: 75%;
     height: auto; /* Giữ đúng tỷ lệ hình ảnh */
     display: block;
     margin-bottom: 15px;
+    text-align: center;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Căn giữa ngang */
+    align-items: center;     /* Căn giữa dọc */
+    border: solid;
+    gap: 20px;
+}
+
+.image-container img {
+    max-width: 80%;
+    height: auto; /* Giữ đúng tỷ lệ hình ảnh */
 }
 
 

@@ -2,11 +2,11 @@
   {
     "title": "Bài 1: Tổng quan vi điều khiển",
     "folder": "bai1",
-    "pages": ["bai1.md", "bai1_1.md", "bai1_2.md","bai1_3.md","bai1_4.md"]
+    "pages": ["bai1.md", "bai1_1.md", "bai1_2.md","bai1_3.md","bai1_4.md","bai1_5.md"]
   },
   {
     "title": "Bài 2: Kiến trúc Arduino",
     "folder": "bai2",
-    "pages": ["bai2.md", "bai2_1.md","bai2_2.md"]
+    "pages": ["bai2.md", "bai2_1.md","bai2_2.md","bai2_3.md"]
   }
 ]
