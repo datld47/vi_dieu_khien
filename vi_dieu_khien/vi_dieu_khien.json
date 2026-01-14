@@ -5,8 +5,18 @@
     "pages": ["bai1.md", "bai1_1.md", "bai1_2.md","bai1_3.md","bai1_4.md","bai1_5.md"]
   },
   {
-    "title": "Bài 2: Kiến trúc Arduino",
+    "title": "Bài 2: Linh kiện điện tử",
     "folder": "bai2",
     "pages": ["bai2.md", "bai2_1.md","bai2_2.md","bai2_3.md"]
+  },
+  {
+    "title": "Bài 3: Kiến trúc Arduino",
+    "folder": "bai3",
+    "pages": []
+  },
+  {
+    "title": "Bài 4: Lập trình Arduino",
+    "folder": "bai4",
+    "pages": ["bai4.md", "bai4_1.md","bai4_2.md","bai4_3.md"]
   }
 ]
