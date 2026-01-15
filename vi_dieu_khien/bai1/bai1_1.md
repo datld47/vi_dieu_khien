@@ -6,6 +6,7 @@
 
 # Vi điều khiển
 
+
 <img src="./vi_dieu_khien/bai1/imgs/vdk.png" alt="image">
 
 ---

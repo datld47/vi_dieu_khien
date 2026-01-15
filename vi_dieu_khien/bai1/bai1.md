@@ -1,4 +1,4 @@
-<h1 style="text-align:center;">Tổng quan vi điều khiển</h1>
+<h1 style="text-align:center;">Mục tiêu bài học</h1>
 
 - ### Nắm được tổng quan vi xử lý
 - ### Nắm được tổng quan vi điều khiển

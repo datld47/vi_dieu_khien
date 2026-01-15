@@ -1,51 +1,65 @@
-
 *, *::before, *::after {
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    overflow: hidden; /* ⛔ body KHÔNG scroll */
-}
-
-
 body {
     margin: 0;
-    height: 100vh;
+    border: solid;
+    height: 100vh; /* Đảm bảo body luôn cao bằng toàn bộ màn hình */
+    overflow: hidden;  /*không cho body trượt*/
     display: flex;
     flex-direction: column;
-    border: solid;
+
 }
 
-h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-}
 
 .header{
+    margin: 2px;
     background-color:#1A1A1B;
-    flex-shrink: 0;
-    display: flex;                 /* căn giữa an toàn */
+    display: flex;               
     align-items: center;
     justify-content: center;        
     color: white;
 }
 
+.header h1 {
+    margin: 0;         /* Xóa bỏ hoàn toàn margin mặc định của h1 */
+    font-size: 1.2rem; /* Chỉnh cỡ chữ vừa mắt */
+    line-height: 1;    /* Thu hẹp khoảng cách dòng */
+}
+
+.header img {
+    height: 1.5rem;    /* Dùng đơn vị rem để tỉ lệ với chữ thay vì pixel cứng */
+    width: auto;
+    margin-right: 10px;
+}
+
+
+
 .content{
-    flex: 1;   
-    overflow-y: auto;
+    margin: 2px;
+    background-color:white;
+    flex: 1;
+    overflow: hidden; 
     display: flex;
     flex-direction: row;
-    min-height: calc(100vh - 120px);
 }
 
 .left-content{
+    margin: 2px;
+    overflow-y: auto; 
     flex:1;
     background-color: whitesmoke;
+
 }
 
 .center-content{
+    margin: 2px;
     flex:7;
-    background-color: white;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+
 }
 
 .right-content{
@@ -62,6 +76,61 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
 }
 
+#sub-center-content{
+    margin: 2px;
+    flex: 1;
+    overflow-y: hidden; 
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.content-wrapper{
+    overflow-y: auto; 
+}
+
+.vdk-content{
+
+    margin: 2px;
+    flex: 1;
+    overflow-y: hidden; 
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center;
+    align-items: center; */
+    align-items: stretch; /* QUAN TRỌNG NHẤT */
+    gap: 10px;
+}
+
+.vdk-center-content
+{
+    flex:7;
+    margin: 2px;
+    overflow-y: auto; 
+
+}
+
+.vdk-left-content
+{
+    flex: 1;
+    margin: 2px;
+    overflow-y: auto; 
+
+}
+
+.vdk-header{
+    margin:2px; 
+    background:#1A1A1B;;
+    color:white;
+}
+
+#slide-controls{
+    margin:2px; 
+    text-align:center; 
+    background-color:#1A1A1B;
+}
+
+
 .menu {
     list-style: none;
     padding: 0;
@@ -70,7 +139,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .menu li {
     padding: 12px;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
     background: white;
     cursor: pointer;
     border-radius: 4px;
@@ -84,8 +153,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .menu li.active {
     background: #4CAF50;
-    color: white;
+    color: black;
 }
+
 
 .video-resource, .image-resource {
     max-width: 100%;
@@ -104,23 +174,87 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
+.video-container {
+    margin: 2px; 
+    display:  flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+    .video-container iframe {
+        margin: 20px;
+        display: block;
+        width: 100%;
+        max-width: 800px;
+        min-height: 300px;
+    }
+
+
 .image-container {
+    
+    margin: 2px; 
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Căn giữa ngang */
-    align-items: center;     /* Căn giữa dọc */
-    border: solid;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
 }
 
-.image-container img {
-    max-width: 80%;
-    height: auto; /* Giữ đúng tỷ lệ hình ảnh */
+    .image-item{
+        width: 100%;
+        max-width: 600px;
+        border: solid black;
+        margin: 2px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        
+    }
+
+        .image-item h2 {
+            width: 100%;
+            align-self: flex-start;
+            text-decoration: underline;
+        
+        }
+
+        .image-item img{
+            width: 100%;
+            height: auto;  
+            display: block;
+        }
+
+
+.menu-2 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display:none
+}
+
+.menu-2 li {
+    padding: 12px;
+    margin-bottom: 5px;
+    background: white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 15px;   /* tăng chữ */
+    font-weight: 500;     /* chữ đậm hơn */
+}
+
+.menu-2 li:hover {
+    background: #ddd;
+}
+
+.menu-2 li.active-sub {
+    background-color: gray;
+    color: black;
 }
 
 
-.header_2{
-    margin:10px; 
-    background:#1A1A1B;;
-    color:white;
+.menu > li.active > .menu-2 {
+    display: block !important;
 }
