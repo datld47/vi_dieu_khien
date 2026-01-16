@@ -1,1 +1,2 @@
 pdftoppm -png -r 300 input.pdf output
+pdftoppm -jpeg -jpegopt quality=60 -r 92 input.pdf output
