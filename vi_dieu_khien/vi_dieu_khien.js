@@ -27,6 +27,11 @@ window.vi_dieu_khien= {
         $.get(filePath, (markdownText) => {
             const html = marked.parse(markdownText);
             $("#js-center-content-1").hide().html(html).fadeIn(200);
+            
+            $("#js-center-content-1 pre code").each(function(i, block) {
+            hljs.highlightElement(block);
+        });
+
             this.updateUI();
         }).fail(() => {
             $("#js-center-content-1").html(`<p style="color:red">Không tìm thấy: ${filePath}</p>`);

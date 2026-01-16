@@ -1,27 +1,31 @@
-# Lịch sự phát triển vi xử lý
-
-<img src="./vi_dieu_khien/bai1/imgs/vxl.png" alt="image">
-
----
-
-# Vi điều khiển
 
 
-<img src="./vi_dieu_khien/bai1/imgs/vdk.png" alt="image">
+<div class="image-container">
 
----
+<div class="image-item">
+    <h2> 1. Lịch sự phát triển vi xử lý </h2>
+    <div class="image-wrapper">
+        <img src="./vi_dieu_khien/bai1/imgs/vxl.png" alt="image">
+    </div>
+</div>
 
-## Phạm vi ứng dụng vi điều khiển
+<div class="image-item">
+    <h2> 2. Vi điều khiển </h2>
+    <div class="image-wrapper">
+        <img src="./vi_dieu_khien/bai1/imgs/vdk.png" alt="image">
+    </div>
+</div>
 
-<img src="./vi_dieu_khien/bai1/imgs/vdk_1.png" alt="image">
+<div class="image-item">
+    <h2> 2. Phạm vi ứng dụng vi điều khiển </h2>
+    <div class="image-wrapper">
+        <img src="./vi_dieu_khien/bai1/imgs/vdk_1.png" alt="image">
+        <img src="./vi_dieu_khien/bai1/imgs/vdk_2.png" alt="image">
+        <img src="./vi_dieu_khien/bai1/imgs/vdk_3.png" alt="image">
+    </div>
+</div>
 
----
-
-<img src="./vi_dieu_khien/bai1/imgs/vdk_2.png" alt="image">
-
----
-
-<img src="./vi_dieu_khien/bai1/imgs/vdk_3.png" alt="image">
+</div>
 
 
 

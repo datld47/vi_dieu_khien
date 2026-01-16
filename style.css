@@ -9,7 +9,6 @@ body {
     overflow: hidden;  /*không cho body trượt*/
     display: flex;
     flex-direction: column;
-
 }
 
 
@@ -22,17 +21,17 @@ body {
     color: white;
 }
 
-.header h1 {
-    margin: 0;         /* Xóa bỏ hoàn toàn margin mặc định của h1 */
-    font-size: 1.2rem; /* Chỉnh cỡ chữ vừa mắt */
-    line-height: 1;    /* Thu hẹp khoảng cách dòng */
-}
+    .header h1 {
+        margin: 0;         /* Xóa bỏ hoàn toàn margin mặc định của h1 */
+        font-size: 1.2rem; /* Chỉnh cỡ chữ vừa mắt */
+        line-height: 1;    /* Thu hẹp khoảng cách dòng */
+    }
 
-.header img {
-    height: 1.5rem;    /* Dùng đơn vị rem để tỉ lệ với chữ thay vì pixel cứng */
-    width: auto;
-    margin-right: 10px;
-}
+    .header img {
+        height: 1.5rem;    /* Dùng đơn vị rem để tỉ lệ với chữ thay vì pixel cứng */
+        width: auto;
+        margin-right: 10px;
+    }
 
 
 
@@ -45,36 +44,36 @@ body {
     flex-direction: row;
 }
 
-.left-content{
-    margin: 2px;
-    overflow-y: auto; 
-    flex:1;
-    background-color: whitesmoke;
+    .left-content{
+        margin: 2px;
+        overflow-y: auto; 
+        flex:1;
+        background-color: whitesmoke;
 
-}
+    }
 
-.center-content{
-    margin: 2px;
-    flex:7;
-    background-color: whitesmoke;
-    display: flex;
-    flex-direction: column;
+    .center-content{
+        margin: 2px;
+        flex:7;
+        background-color: whitesmoke;
+        display: flex;
+        flex-direction: column;
 
-}
+    }
 
-.right-content{
-    flex: 1;
-    background-color: brown;
-}
+    .right-content{
+        flex: 1;
+        background-color: brown;
+    }
 
-.footer{
-    background-color: #1A1A1B;;
-    flex-shrink: 0;
-    display: flex;                 /* căn giữa an toàn */
-    align-items: center;
-    justify-content: center;        
-    color: white;
-}
+    .footer{
+        background-color: #1A1A1B;;
+        flex-shrink: 0;
+        display: flex;                 /* căn giữa an toàn */
+        align-items: center;
+        justify-content: center;        
+        color: white;
+    }
 
 #sub-center-content{
     margin: 2px;
@@ -96,27 +95,25 @@ body {
     overflow-y: hidden; 
     display: flex;
     flex-direction: row;
-    /* justify-content: center;
-    align-items: center; */
-    align-items: stretch; /* QUAN TRỌNG NHẤT */
+    /* align-items: stretch; */
     gap: 10px;
 }
 
-.vdk-center-content
-{
-    flex:7;
-    margin: 2px;
-    overflow-y: auto; 
+    .vdk-center-content
+    {
+        flex:7;
+        margin: 2px;
+        overflow-y: auto; 
 
-}
+    }
 
-.vdk-left-content
-{
-    flex: 1;
-    margin: 2px;
-    overflow-y: auto; 
+    .vdk-left-content
+    {
+        flex: 1;
+        margin: 2px;
+        overflow-y: auto; 
 
-}
+    }
 
 .vdk-header{
     margin:2px; 
@@ -174,13 +171,13 @@ body {
     text-align: center;
 }
 
+
 .video-container {
     margin: 2px; 
     display:  flex;
     justify-content: center;
     align-content: center;
 }
-
 
     .video-container iframe {
         margin: 20px;
@@ -201,6 +198,7 @@ body {
     gap: 20px;
 }
 
+
     .image-item{
         width: 100%;
         max-width: 600px;
@@ -211,7 +209,6 @@ body {
         justify-content: center;
         align-items: center;
         gap: 10px;
-        
     }
 
         .image-item h2 {
@@ -221,11 +218,35 @@ body {
         
         }
 
-        .image-item img{
-            width: 100%;
-            height: auto;  
-            display: block;
+        .image-item .image-wrapper{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+
         }
+        
+            .image-wrapper img{
+                width: 100%;
+                height: auto;
+            }
+
+            .image-wrapper .image-slide{
+                margin: 5px;
+            }
+
+.text-container{
+    margin: 2px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
 
 
 .menu-2 {
@@ -254,7 +275,39 @@ body {
     color: black;
 }
 
-
 .menu > li.active > .menu-2 {
     display: block !important;
+}
+
+
+.text-container h2{
+    margin: 2px;
+}
+
+pre {
+        background-color: #f6f8fa !important;/* Màu nền tối chuẩn Atom */
+        padding: 1.2em;
+        border-radius: 8px;
+        border: solid black;
+    }
+
+    /* Quan trọng: Không được để màu cố định cho thẻ code, 
+       để highlight.js tự nhuộm màu */
+pre code {
+    font-family: 'Cascadia Code', 'Consolas', monospace !important;
+    font-size: 15px;
+    line-height: 1.5;
+    background: transparent !important;
+    color: #abb2bf; /* Màu chữ mặc định (trắng xám) */
+}
+
+/* Các lớp màu của Highlight.js (Phòng trường hợp file CSS CDN bị lỗi) */
+.hljs-keyword { color: #c678dd !important; }   /* void, int, return - Màu tím */
+.hljs-title { color: #61afef !important; }     /* setup, loop - Màu xanh */
+.hljs-comment { color: #5c6370 !important; font-style: italic; } /* Ghi chú - Màu xám */
+.hljs-string { color: #98c379 !important; }    /* Chuỗi - Màu xanh lá */
+
+
+.title-center{
+    text-align: center;
 }

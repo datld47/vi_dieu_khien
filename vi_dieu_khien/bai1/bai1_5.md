@@ -1,4 +1,7 @@
-# Cấu trúc một chương trình điều khiển
+<div class="text-container">
+
+<h2>Cấu trúc một chương trình điều khiển</h2>
+
 ```c
 //1. Khai báo thư viện
 // ...
@@ -17,3 +20,4 @@ void loop()
     //...
 }
 ```
+</div>

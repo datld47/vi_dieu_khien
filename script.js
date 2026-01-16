@@ -3,7 +3,6 @@ $(async function () {
     
     await window.vi_dieu_khien.init();
 
-
     $(document).on("click", ".menu-2 li", function (e) {
         e.stopPropagation(); // QUAN TRỌNG: Ngăn không cho sự kiện lan lên li cha
        const parentLi = $(this).closest(".menu > li"); 
