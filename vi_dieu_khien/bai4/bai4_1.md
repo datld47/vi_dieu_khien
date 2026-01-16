@@ -3,7 +3,9 @@
 <div class="video-container">
 <iframe 
     src="https://drive.google.com/file/d/15bj6rKzrPPnvgCiwXAKdQ6CKRHgd7fHC/preview"
-    allow="autoplay"
+    allow="autoplay; fullscreen" 
+    webkitallowfullscreen 
+    mozallowfullscreen
     allowfullscreen>
 </iframe>
 </div>
