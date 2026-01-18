@@ -22,6 +22,7 @@
     </div>
 </div>
 
+
 <div class="lab-content">
     <h2>🎞Lab 3: Tính diện tích - phần 2</h2>
     <p>Cải thiện chương trình tính diện tích với các yêu cầu sau</p>

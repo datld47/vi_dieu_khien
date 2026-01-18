@@ -256,6 +256,7 @@ body {
 .lab-content{
     font-size: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    max-width: 600px;
 }
 .lab-content h2{
     border: solid;
