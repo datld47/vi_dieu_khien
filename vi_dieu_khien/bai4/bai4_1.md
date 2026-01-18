@@ -1,14 +1,19 @@
-<h2 style="padding:5px;color:brown">I.📽 Cài đặt môi trường làm việc protues</h2>
 
-<div class="video-container">
-<iframe 
-    src="https://drive.google.com/file/d/15bj6rKzrPPnvgCiwXAKdQ6CKRHgd7fHC/preview"
-    allow="autoplay; fullscreen" 
-    webkitallowfullscreen 
-    mozallowfullscreen
-    allowfullscreen>
-</iframe>
+<div class="lab-content">
+    <h2>🎞Lab1: Cài đặt môi trường làm việc protues<</h2>
+    <p>Qui trình tuân theo các bước sau</p>
+    <ul>
+        <li>Tổ chức folder dự án</li>
+        <li>Tạo dự án protues với flowchart</li>
+        <li>Thêm module monitor vào flowchart</li>
+    </ul>
+    <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/WN6p3A_aXus"
+        allowfullscreen></iframe>
+    </div>
 </div>
+
+
 
 <h2 style="padding:5px;color:brown">II.Hướng dẫn các bước</h2>
 
@@ -120,3 +125,6 @@
 </div>
 
 <div>
+
+
+

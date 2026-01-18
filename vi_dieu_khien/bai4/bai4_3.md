@@ -20,3 +20,18 @@
     </div>
 </div>
 </div>
+
+
+<div class="lab-content">
+    <h2>🎞Lab 2: Tính diện tích- phần 1</h2>
+    <p>Viết chương trình tính diện tích</p>
+    <ul>
+        <li>khai báo chiều dài , chiều rộng</li>
+        <li>Thực hiện tính diện tích= chiều dài* chiều rộng và in kết quả diện tích ra màn hình"</li>
+    </ul>
+    <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/bYjmqTdufSU"
+        allowfullscreen></iframe>
+    </div>
+</div>
+
