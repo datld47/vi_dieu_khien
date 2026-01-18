@@ -1,6 +1,6 @@
 
 <div class="lab-content">
-    <h2>🎞Lab1: Cài đặt môi trường làm việc protues<</h2>
+    <h2>🎞Lab1: Cài đặt môi trường làm việc protues</h2>
     <p>Qui trình tuân theo các bước sau</p>
     <ul>
         <li>Tổ chức folder dự án</li>
