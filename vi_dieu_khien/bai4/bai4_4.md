@@ -22,7 +22,6 @@
     </div>
 </div>
 
-
 <div class="lab-content">
     <h2>🎞Lab 3: Tính diện tích - phần 2</h2>
     <p>Cải thiện chương trình tính diện tích với các yêu cầu sau</p>
@@ -32,6 +31,21 @@
     </ul>
     <div class="video-container">
     <iframe src="https://www.youtube.com/embed/MewQ57d-2Xk"
+        allowfullscreen></iframe>
+    </div>
+</div>
+
+
+<div class="lab-content">
+    <h2>🎞Lab 4: Giải phương trình bậc 2</h2>
+    <p>Viết lưu đồ giải thuật giải phương trình bậc 2</p>
+    <div class="image-container">
+    <div class="image-item">
+        <img class="image-slide" src="./vi_dieu_khien/bai4/imgs/bai4_4-16.png" alt="image">
+    </div>
+    </div>
+    <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/R0xzYt3QqtI"
         allowfullscreen></iframe>
     </div>
 </div>
