@@ -1,130 +1,163 @@
-*, *::before, *::after {
-    box-sizing: border-box;
-}
+/* --- 1. THIẾT LẬP KHUNG (LAYOUT) --- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-    margin: 0;
-    border: solid;
-    height: 100vh; /* Đảm bảo body luôn cao bằng toàn bộ màn hình */
-    overflow: hidden;  /*không cho body trượt*/
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column; /* Xếp Header -> Content -> Footer theo hàng dọc */
+    height: 100vh;          /* Khóa chiều cao đúng bằng màn hình */
+    overflow: hidden;       /* Không cho toàn bộ trang cuộn, chỉ cuộn bài giảng */
+}
+
+.header {
+    background-color: green;
+    color: white;
+    height: 40px;
+    display: flex;
+    align-items: center;   /* Căn giữa tất cả theo chiều dọc */
+    padding: 0 10px;
+    position: relative;
+    box-sizing: border-box; /* Đảm bảo padding không làm tăng chiều cao 60px */
+}
+
+.btn-nav {
+    display: none;     
+    flex-shrink: 0;        /* Không cho nút bị co lại */
+    padding: 6px 10px;     /* Giảm nhẹ padding để tiết kiệm diện tích */
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 13px;       /* Chỉnh cỡ chữ nút nhỏ lại một chút */
+    cursor: pointer;
+    white-space: nowrap;   
+}
+
+.header-title {
+    flex: 1;               /* Chiếm toàn bộ không gian còn lại ở giữa */
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;       /* Tăng nhẹ để nổi bật tiêu đề chính */
+    margin: 0;             /* QUAN TRỌNG: Triệt tiêu margin mặc định */
+    padding: 0 10px;
+    overflow: hidden;      /* Cắt bớt nếu chữ quá dài */
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+    text-transform: uppercase; /* Làm tiêu đề chuyên nghiệp hơn */
+}
+
+
+.footer {
+    margin-top: 2px;
+    height: 30px;
+    background-color: green;
+    color: white;
+    font-size: 10px;
     display: flex;
     flex-direction: column;
-}
-
-
-.header{
-    margin: 2px;
-    background-color:#1A1A1B;
-    display: flex;               
+    justify-content: center;
     align-items: center;
-    justify-content: center;        
-    color: white;
 }
 
-    .header h1 {
-        margin: 0;         /* Xóa bỏ hoàn toàn margin mặc định của h1 */
-        font-size: 1.2rem; /* Chỉnh cỡ chữ vừa mắt */
-        line-height: 1;    /* Thu hẹp khoảng cách dòng */
-    }
 
-    .header img {
-        height: 1.5rem;    /* Dùng đơn vị rem để tỉ lệ với chữ thay vì pixel cứng */
-        width: auto;
-        margin-right: 10px;
-    }
-
-
-
-.content{
-    margin: 2px;
-    background-color:white;
-    flex: 1;
-    overflow: hidden; 
+.content {
     display: flex;
-    flex-direction: row;
+    flex: 1;                /* LÒ XO: Tự động chiếm hết khoảng trống ở giữa */
+    overflow: hidden;       /* Giữ cho khung này không tràn ra ngoài */
+    position: relative;     /* Làm gốc tọa độ cho Menu Mobile sau này */
 }
 
-    .left-content{
-        margin: 2px;
-        overflow-y: auto; 
-        flex:1;
-        background-color: whitesmoke;
+.left-content{
+    width: 250px;           /* Độ rộng cố định trên PC */
+    background-color: #e0e0e0;
+    padding: 20px;
+    overflow-y: auto;       /* Tự tạo thanh cuộn nếu danh sách quá dài */
+    /* border: solid red; */
+}
 
-    }
+.center-content{
+    margin: 2px;
+    flex:7;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    border: solid green;
+}
 
-    .center-content{
-        margin: 2px;
-        flex:7;
-        background-color: whitesmoke;
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    .right-content{
-        flex: 1;
-        background-color: brown;
-    }
-
-    .footer{
-        background-color: #1A1A1B;;
-        flex-shrink: 0;
-        display: flex;                 /* căn giữa an toàn */
-        align-items: center;
-        justify-content: center;        
-        color: white;
-    }
+/*load html  vào center-content*/
 
 #sub-center-content{
+    /* border: solid red; */
     margin: 2px;
     flex: 1;
     overflow-y: hidden; 
-    
     display: flex;
     flex-direction: column;
 }
 
-.content-wrapper{
-    overflow-y: auto; 
-}
 
 .vdk-content{
 
     margin: 2px;
-    flex: 1;
-    overflow-y: hidden; 
     display: flex;
-    flex-direction: row;
-    /* align-items: stretch; */
+    flex: 1;                /* LÒ XO: Tự động chiếm hết khoảng trống ở giữa */
+    overflow: hidden;       /* Giữ cho khung này không tràn ra ngoài */
+    position: relative;     /* Làm gốc tọa độ cho Menu Mobile sau này */
     gap: 10px;
 }
 
     .vdk-center-content
     {
-        flex:7;
-        margin: 2px;
-        overflow-y: auto; 
+        flex: 1;                /* Chiếm toàn bộ phần còn lại ở giữa */
+        background-color:whitesmoke;
+        padding: 20px;
+        overflow-y: auto;       /* Thanh cuộn chính cho bài giảng của bạn */
+        /* border: solid green; */
 
     }
 
-    .vdk-left-content
-    {
-        flex: 1;
-        margin: 2px;
-        overflow-y: auto; 
 
+    .vdk-right-content{
+        width: 250px;           /* Độ rộng cố định trên PC */
+        background-color: #e0e0e0;
+        padding: 20px;
+        overflow-y: auto;       /* Tự tạo thanh cuộn nếu danh sách quá dài */
+        /* border: solid red; */
     }
 
-.vdk-header{
-    margin:2px; 
-    background:#1A1A1B;;
-    color:white;
+
+#slide-controls {
+    margin: 2px; 
+    text-align: center; 
+    background-color: #1A1A1B;
+    padding: 5px 0; /* Thêm padding cho thanh đen để cân đối */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Khoảng cách giữa nút và số trang */
 }
 
-#slide-controls{
-    margin:2px; 
-    text-align:center; 
-    background-color:#1A1A1B;
+#slide-controls button {
+    padding: 4px 12px;    /* Giảm chiều cao từ 8px xuống 4px */
+    font-size: 13px;      /* Cỡ chữ nhỏ hơn một chút */
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    transition: background 0.3s;
+}
+
+#slide-controls button:hover {
+    background-color: #e0e0e0;
+}
+
+#slide-counter {
+    font-size: 14px;      /* Cỡ chữ số trang tương đương với nút */
+    color: white;
+    font-weight: bold;
+    min-width: 80px;      /* Giữ chiều rộng cố định để số trang không bị nhảy */
+    display: inline-block;
 }
 
 
@@ -151,122 +184,6 @@ body {
 .menu li.active {
     background: #4CAF50;
     color: black;
-}
-
-
-.video-resource, .image-resource {
-    max-width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-
-/* 1. Xử lý Hình ảnh tự co lại */
-
-.image-resource img {
-    max-width: 75%;
-    height: auto; /* Giữ đúng tỷ lệ hình ảnh */
-    display: block;
-    margin-bottom: 15px;
-    text-align: center;
-}
-
-
-.video-container {
-    margin: 2px; 
-    display:  flex;
-    justify-content: center;
-    align-content: center;
-}
-
-    .video-container iframe {
-        margin: 20px;
-        display: block;
-        width: 100%;
-        max-width: 800px;
-        min-height: 300px;
-    }
-
-
-.image-container {
-    
-    margin: 2px; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-
-    .image-item{
-        width: 100%;
-        max-width: 600px;
-        border: solid black;
-        margin: 2px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-    }
-
-        .image-item h2 {
-            width: 100%;
-            align-self: flex-start;
-            text-decoration: underline;
-        
-        }
-
-        .image-item .image-wrapper{
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 20px;
-
-
-        }
-        
-            .image-wrapper img{
-                width: 100%;
-                height: auto;
-            }
-
-            .image-wrapper .image-slide{
-                margin: 5px;
-            }
-
-.text-container{
-    margin: 2px; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-}
-
-
-.text-container h2{
-    margin: 2px;
-}
-
-
-.lab-content{
-    font-size: 16px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    max-width: 600px;
-}
-.lab-content h2{
-    border: solid;
-    background-color: greenyellow;
-}
-
-.lab-content img {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
 }
 
 
@@ -301,8 +218,6 @@ body {
 }
 
 
-
-
 pre {
         background-color: #f6f8fa !important;/* Màu nền tối chuẩn Atom */
         padding: 1.2em;
@@ -327,7 +242,165 @@ pre code {
 .hljs-string { color: #98c379 !important; }    /* Chuỗi - Màu xanh lá */
 
 
-.title-center{
+
+.slide-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* border: solid red; */
+}
+
+.slide-container h1{
     text-align: center;
 }
 
+
+
+
+.slide-container img{
+
+    width: 100%;
+    /* max-width: 600px; */
+    border: solid black;
+
+}
+
+.video-lab{
+    width: 100%;
+    border: solid black;
+    display: flex;
+    flex-direction: column;
+    gap:5px
+}
+
+.video-lab .title-lab{
+    text-align: center;
+    background-color: greenyellow;
+}
+
+
+.slide-container  iframe {
+    display: block;
+    width: 100%;
+    min-height: 300px;
+}
+
+
+.info-card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-left: 5px solid;
+    padding: 15px 20px;
+}
+
+/* Màu riêng cho Mục tiêu */
+.goal-card { border-left-color: #007bff; background-color: #f8fbff; }
+/* Màu riêng cho Chuẩn đầu ra */
+.output-card { border-left-color: #28a745; background-color: #f8fff9; }
+
+.card-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.card-list {
+    margin: 0;
+    padding-left: 20px;
+    list-style-type: square;
+    line-height: 1.6;
+    color: #555;
+}
+
+.card-list li {
+    margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+Reonsive */
+
+
+@media (max-width: 768px) {
+
+    .header-title {
+        font-size: 14px;  /* Thu nhỏ chữ một chút trên mobile */
+    }
+    
+    .btn-nav { display: block; }
+
+    /* MENU BIẾN THÀNH LỚP NỔI (Drawer) */
+    .left-content,
+    .right-menu{
+        position: absolute; /* Nhấc ra khỏi luồng nhưng bám vào .content */
+        top: 0;
+        bottom: 0;          /* Cao từ đầu đến cuối phần .content */
+        z-index: 100;
+        transition: 0.3s;
+    }
+
+
+    
+    .left-content{ left: -260px; }  /* Giấu bên trái */
+    
+    .right-menu{ right: -260px; } /* Giấu bên phải */
+   
+
+    /* Khi kích hoạt nút bấm */
+    .left-content.active { left: 0; }
+    
+
+    .right-menu.active
+    { right: 0; }
+
+    /* Nội dung bài giảng tràn 100% */
+    
+    .center-content { width: 100%; }
+}

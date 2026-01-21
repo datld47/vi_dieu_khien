@@ -1,4 +1,4 @@
-<div class="text-container">
+<div class="slide-container">
 
 <h2>Cấu trúc một chương trình điều khiển</h2>
 
@@ -20,4 +20,5 @@ void loop()
     //...
 }
 ```
+
 </div>

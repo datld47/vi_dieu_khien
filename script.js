@@ -49,3 +49,36 @@ $(async function () {
         $(this).addClass("active");
     });
 });
+
+
+function toggleLeft() {
+
+    const rightMenus = document.querySelectorAll('.right-menu');
+    rightMenus.forEach(menu => {
+        menu.classList.remove('active');
+    });
+
+
+    const leftMenu = document.getElementById('left-menu');
+    if (leftMenu) {
+        leftMenu.classList.toggle('active');
+    }
+
+}
+
+function toggleRight() {
+
+    console.log("toggleRight")
+
+
+    const rightMenus = document.querySelectorAll('.right-menu');
+    rightMenus.forEach(menu => {
+        menu.classList.toggle('active');
+    });
+
+
+    const leftMenu = document.getElementById('left-menu');
+    if (leftMenu) {
+          leftMenu.classList.remove('active');
+    }
+}

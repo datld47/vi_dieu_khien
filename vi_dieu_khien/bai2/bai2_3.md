@@ -1,6 +1,5 @@
-<h1> Linh kiện điện tử</h1>
-<div class="image-container">
-<div class="image-item">
+<div class="slide-container">
+    <h1>Linh kiện điện tử</h1>
     <div class="image-wrapper">
     <img class="image-slide" src="./vi_dieu_khien/bai2/imgs/image_2_3_1.png" alt="image">
     <img class="image-slide" src="./vi_dieu_khien/bai2/imgs/image_2_3_2.png" alt="image" >
@@ -17,5 +16,4 @@
     <img class="image-slide" src="./vi_dieu_khien/bai2/imgs/image_2_3_13.png" alt="image">
     <img class="image-slide" src="./vi_dieu_khien/bai2/imgs/image_2_3_14.png" alt="image">
     <img class="image-slide" src="./vi_dieu_khien/bai2/imgs/image_2_3_15.png" alt="image">
-</div>
 </div>

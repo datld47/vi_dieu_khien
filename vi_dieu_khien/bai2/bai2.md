@@ -1,10 +1,17 @@
-<h1 style="text-align:center;">Mục tiêu bài học</h1>
+<div class="slide-container">
+    <div class="info-card goal-card">
+            <h2 class="card-title">🎯 Mục tiêu bài học</h2>
+            <ul class="card-list">
+                <li>Nắm được cơ bản về hệ đếm</li>
+                <li>Nắm được các linh kiện điện tử cơ bản</li>
+            </ul>
+    </div>
+    <div class="info-card output-card">
+        <h2 class="card-title">✅ Chuẩn đầu ra</h2>
+        <ul class="card-list">
+            <li>Chuyển đổi qua lại giữa các hệ đếm</li>
+            <li>Giải thích nguyên lý hoạt động của linh kiện điện tử</li>
+        </ul>
+    </div>
+<div>
 
-- ### Nắm được cơ bản về hệ đếm
-- ### Nắm được các linh kiện điện tử cơ bản
----
-
-<h1 style="text-align:center;">Chuẩn đầu ra</h1>
-
-- ### Chuyển đổi qua lại giữa các hệ đếm
-- ### Giải thích nguyên lý hoạt động của linh kiện điện tử
