@@ -97,7 +97,8 @@ body {
 }
 
 
-.vdk-content{
+.vdk-content,
+.page-content{
 
     margin: 2px;
     display: flex;
@@ -107,7 +108,8 @@ body {
     gap: 10px;
 }
 
-    .vdk-center-content
+    .vdk-center-content,
+    .page-center-content
     {
         flex: 1;                /* Chiếm toàn bộ phần còn lại ở giữa */
         background-color:whitesmoke;
@@ -118,7 +120,9 @@ body {
     }
 
 
-    .vdk-right-content{
+    .vdk-right-content,
+    .page-right-contnt{
+
         width: 250px;           /* Độ rộng cố định trên PC */
         background-color: #e0e0e0;
         padding: 20px;
