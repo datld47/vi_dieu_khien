@@ -225,8 +225,7 @@ body {
 pre {
         background-color: #f6f8fa !important;/* Màu nền tối chuẩn Atom */
         padding: 1.2em;
-        border-radius: 8px;
-        border: solid black;
+        border: solid red;
     }
 
     /* Quan trọng: Không được để màu cố định cho thẻ code, 
@@ -261,22 +260,37 @@ pre code {
 }
 
 
-
-
 .slide-container img{
 
     width: 100%;
-    /* max-width: 600px; */
     border: solid black;
 
 }
+
 
 .video-lab{
     width: 100%;
     border: solid black;
     display: flex;
     flex-direction: column;
-    gap:5px
+    gap: 5px;
+}
+
+.content-box
+{
+    display: flex;
+    flex-direction: column;
+    gap:3px;
+    padding-left: 5px;
+    justify-content: center;
+    background-color: white;
+}
+
+.content-box p{
+    white-space: pre-line; 
+    color: #444d56;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
 }
 
 .video-lab .title-lab{
@@ -325,49 +339,6 @@ pre code {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* 
 Reonsive */
 
@@ -407,4 +378,73 @@ Reonsive */
     /* Nội dung bài giảng tràn 100% */
     
     .center-content { width: 100%; }
+
+    pre {
+        white-space: pre-wrap;       /* Ép xuống dòng khi hết chiều ngang */
+        word-wrap: break-word;       /* Ngắt từ nếu từ quá dài */
+        font-size: 14px;             /* Giảm size chữ một chút để dễ nhìn trên mobile */
+        padding: 10px;               /* Tạo khoảng trống cho dễ đọc */
+        width: 100%;                 /* Đảm bảo không vượt quá cha */
+        box-sizing: border-box;
+    }
+
+
+    h1 {
+        font-size: 1.5rem;   /* Khoảng 24px */
+        margin-bottom: 12px;
+    }
+
+    h2 {
+        font-size: 1.3rem;   /* Khoảng 21px - phù hợp cho tiêu đề bài tập */
+        margin-bottom: 10px;
+    }
+
+    h3 {
+        font-size: 1.1rem;   /* Khoảng 18px */
+        margin-bottom: 8px;
+    }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

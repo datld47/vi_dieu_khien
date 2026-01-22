@@ -1,6 +1,6 @@
 <div class="slide-container">
-
 <h2>Cấu trúc một chương trình điều khiển</h2>
+<div class="content-box">
 
 ```c
 //1. Khai báo thư viện
@@ -20,5 +20,7 @@ void loop()
     //...
 }
 ```
+
+</div>
 
 </div>

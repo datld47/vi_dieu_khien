@@ -17,22 +17,28 @@
     <img src="./vi_dieu_khien/bai4/imgs/bai4_4-15.jpg" alt="image">
     <div class="video-lab">
         <h2 class="title-lab">🎞Lab 3: Tính diện tích - phần 2</h2>
-        <div class="content-lab">
-            Cải thiện chương trình tính diện tích với các yêu cầu sau<br>
-            - Nếu chiều dài nhỏ hơn chiều rồng  in ra màn hình  "loi"<br>
-            - Nếu chiều dài lớn hơn hoặc bằng chiều rộng thì thực hiện: tính diện tích và in giá trị diện tích ra màn hình"<br>
+        <div class="content-box">
+            <p>
+                <b>Cải thiện chương trình tính diện tích với các yêu cầu sau:</b>
+                 - Nếu chiều dài nhỏ hơn chiều rồng  in ra màn hình  "loi"
+                 - Nếu chiều dài lớn hơn hoặc bằng chiều rộng thì thực hiện: tính diện tích và in giá trị diện tích ra màn hình
+            </p>
         </div>
         <iframe src="https://www.youtube.com/embed/MewQ57d-2Xk"
             allowfullscreen></iframe>
     </div>
     <div class="video-lab">
         <h2 class="title-lab">Lab 4: Giải phương trình bậc 2</h2>
-        <div class="content-lab">
-            <p>Viết lưu đồ giải thuật giải phương trình bậc 2</p>
-            <img  src="./vi_dieu_khien/bai4/imgs/bai4_4-16.png" alt="image">
+        <div class="content-box">
+            <p>
+                <b>Viết lưu đồ giải thuật giải phương trình bậc 2:</b>
+                - Dựa vào phương phương pháp giải ở hình dưới
+            </p>
         </div>
+        <img  src="./vi_dieu_khien/bai4/imgs/bai4_4-16.png" alt="image">
         <iframe src="https://www.youtube.com/embed/R0xzYt3QqtI"
                 allowfullscreen></iframe>
     </div>
 </div>
+
 

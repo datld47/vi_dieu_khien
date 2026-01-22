@@ -2,11 +2,13 @@
     <h1>Ngôn ngữ lập trình</h1>
     <div class="video-lab">
         <h2 class="title-lab">🎞Lab1: Cài đặt môi trường làm việc protues</h2>
-        <div class="content-lab">
-            Qui trình tuân theo các bước sau<br>
-            - Tổ chức folder dự án<br>
-            - Tạo dự án protues với flowchart<br>
-            - Thêm module monitor vào flowchart<br>
+        <div class="content-box">
+            <p>
+                <b>Qui trình tuân theo các bước sau</b>
+                    - Tổ chức folder dự án
+                    - Tạo dự án protues với flowchart
+                    - Thêm module monitor vào flowchart
+            </p>
         </div>
         <iframe src="https://www.youtube.com/embed/WN6p3A_aXus"
         allowfullscreen></iframe>

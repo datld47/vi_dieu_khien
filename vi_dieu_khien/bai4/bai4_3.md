@@ -17,10 +17,12 @@
     <img class="image-slide" src="./vi_dieu_khien/bai4/imgs/bai4_3-15.jpg" alt="image">
     <div class="video-lab">
         <h2 class="title-lab">🎞Lab 2: Tính diện tích- phần 1</h2>
-        <div class="content-lab">
-            Viết chương trình tính diện tích<br>
-            - khai báo chiều dài , chiều rộng<br>
-            - Thực hiện tính diện tích= chiều dài* chiều rộng và in kết quả diện tích ra màn hình<br>
+        <div class="content-box">
+            <p>
+                <b>Viết chương trình tính diện tích</b>
+                - khai báo chiều dài , chiều rộng
+                - Thực hiện tính diện tích= chiều dài* chiều rộng và in kết quả diện tích ra màn hình
+            </p>
         </div>
         <iframe src="https://www.youtube.com/embed/bYjmqTdufSU"
             allowfullscreen></iframe>
