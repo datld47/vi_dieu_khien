@@ -26,4 +26,24 @@
     <img src="./vi_dieu_khien/bai4/imgs/bai4_5_2-12.jpg" alt="image">
     <img src="./vi_dieu_khien/bai4/imgs/bai4_5_2-13.jpg" alt="image">
     <img src="./vi_dieu_khien/bai4/imgs/bai4_5_2-14.jpg" alt="image">
+    <div class="video-lab">
+        <h2 class="title-lab">🎞Lab 5: Vòng lặp in "hello"</h2>
+        <div class="content-box">
+            <p>
+                <b>1.count-loop</b>
+                    - loop variable: t1
+                    - count : 10
+                <b>2.for-next loop </b>
+                    - loop variable: t1
+                    - start value: 2
+                    - stop value: 15
+                    - step value: 3
+            </p>
+        </div>
+        <iframe src="https://www.youtube.com/embed/R0xzYt3QqtI"
+            allowfullscreen></iframe>
+        </div>
+    </div>
+
+
 </div>
