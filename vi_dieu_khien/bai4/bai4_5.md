@@ -40,10 +40,28 @@
                     - step value: 3
             </p>
         </div>
-        <iframe src="https://www.youtube.com/embed/R0xzYt3QqtI"
+        <iframe src="https://www.youtube.com/embed/P45CRvJVHGY"
             allowfullscreen></iframe>
-        </div>
     </div>
-
-
+    <div class="video-lab">
+        <h2 class="title-lab">🎞Lab 6: Tính tổng 1+2..N</h2>
+        <div class="content-box">
+        </div>
+        <img src="./vi_dieu_khien/bai4/imgs/bai4_5_3-1.jpg" alt="image">
+        <img src="./vi_dieu_khien/bai4/imgs/bai4_5_3-2.jpg" alt="image">
+        <img src="./vi_dieu_khien/bai4/imgs/bai4_5_3-3.jpg" alt="image">
+        <iframe src="https://www.youtube.com/embed/itwzxXTEVIc" allowfullscreen></iframe>
+    </div>
+    <div class="video-lab">
+        <h2 class="title-lab">🎞Lab 7: Chờ sự kiện nhấn nút</h2>
+        <div class="content-box">
+        <p>
+            <b>Sử dụng vòng lặp để chờ sự kiện nhấn nút</b>
+            - Ban đầu bật led
+            - Dùng vòng lặp chờ nút nhấn. Nếu không nhấn nút thì không làm gì. Nếu nhấn nút tăt led và thoát vòng lặp
+        </p>
+        <img src="./vi_dieu_khien/bai4/imgs/bai4_5_2-09.jpg" alt="image">
+        </div>
+        <iframe src="https://www.youtube.com/embed/I1h1KHN_w0Y" allowfullscreen></iframe>
+    </div>
 </div>
