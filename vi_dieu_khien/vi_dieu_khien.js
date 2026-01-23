@@ -23,7 +23,16 @@ window.vi_dieu_khien= {
         const filePath = `${this.root}/${lesson.folder}/${fileName}`;
 
         console.log(filePath);
-
+        const aiBtn = $(".ai-btn-dark");
+        if(lesson.ai_link)
+        {
+            console.log(lesson.ai_link)
+            aiBtn.attr("href", lesson.ai_link);
+            aiBtn.show()
+            aiBtn.css("display", "inline-flex");
+        }
+        
+    
         $.get(filePath, (markdownText) => {
             const html = marked.parse(markdownText);
             $("#js-center-content-1").hide().html(html).fadeIn(200);

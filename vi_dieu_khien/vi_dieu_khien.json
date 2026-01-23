@@ -2,21 +2,25 @@
   {
     "title": "Bài 1: Tổng quan vi điều khiển",
     "folder": "bai1",
-    "pages": ["bai1.md", "bai1_1.md", "bai1_2.md","bai1_3.md","bai1_4.md","bai1_5.md"]
+    "pages": ["bai1.md", "bai1_1.md", "bai1_2.md","bai1_3.md","bai1_4.md","bai1_5.md"],
+    "ai_link":"https://gemini.google.com/gem/10SnbXOpT2P3UVrZ9K6LAGt43X5sREQ26?usp=sharing"
   },
   {
     "title": "Bài 2: Linh kiện điện tử",
     "folder": "bai2",
-    "pages": ["bai2.md", "bai2_1.md","bai2_2.md","bai2_3.md"]
+    "pages": ["bai2.md", "bai2_1.md","bai2_2.md","bai2_3.md"],
+    "ai_link":"link-2"
   },
   {
     "title": "Bài 3: Kiến trúc Arduino",
     "folder": "bai3",
-    "pages": []
+    "pages": [],
+    "ai_link":"link-3"
   },
   {
     "title": "Bài 4: Lập trình Arduino",
     "folder": "bai4",
-    "pages": ["bai4.md", "bai4_1.md","bai4_2.md","bai4_3.md","bai4_4.md","bai4_5.md"]
+    "pages": ["bai4.md", "bai4_1.md","bai4_2.md","bai4_3.md","bai4_4.md","bai4_5.md"],
+    "ai_link":"link-4"
   }
 ]
