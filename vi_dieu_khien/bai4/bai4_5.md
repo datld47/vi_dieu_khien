@@ -64,4 +64,24 @@
         </div>
         <iframe src="https://www.youtube.com/embed/I1h1KHN_w0Y" allowfullscreen></iframe>
     </div>
+    <div class="video-lab">
+        <h2 class="title-lab">🎞Lab 8: Led chớp tắt </h2>
+        <div class="content-box">
+        <p>
+            <b>Sử dụng vòng lặp siêu loop để tạo chương trình theo giải thuật sau</b>
+        </p>
+        <img class="img-s" src="./vi_dieu_khien/bai4/imgs/bai4_5_3-4.png" alt="image">
+        </div>
+        <iframe src="https://www.youtube.com/embed/KROhhalJG-0" allowfullscreen></iframe>
+    </div>
+    <div class="video-lab">
+        <h2 class="title-lab">🎞Lab 9: Điều khiển led sáng tắt bằng nút nhấn</h2>
+        <div class="content-box">
+        <p>
+            <b>Sử dụng vòng lặp siêu loop để tạo chương trình theo giải thuật sau</b>
+        </p>
+        <img class="img-s" src="./vi_dieu_khien/bai4/imgs/bai4_5_3-5.png" alt="image">
+        </div>
+        <iframe src="https://www.youtube.com/embed/oVrwPsAK3G4" allowfullscreen></iframe>
+    </div>
 </div>

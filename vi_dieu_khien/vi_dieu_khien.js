@@ -52,6 +52,13 @@ window.vi_dieu_khien= {
         $("#slide-counter").text(`Trang ${this.index_2 + 1} / ${totalSlides}`);
         $("#btn-prev").prop("disabled", this.index_2 === 0);
         $("#btn-next").prop("disabled", this.index_2 === totalSlides - 1);
+
+        //cập nhập thanh trượt
+        console.log("cap nhap thanh truoc");
+        const content = document.querySelector('.vdk-center-content');
+       if (content) {
+         content.scrollTop = 0; // Đổi từ scrollLeft thành scrollTop
+        }
     },
 }
 

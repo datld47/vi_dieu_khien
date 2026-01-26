@@ -194,7 +194,7 @@ body {
 .menu-2 {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 3px;
     display:none
 }
 
@@ -265,6 +265,15 @@ pre code {
     width: 100%;
     border: solid black;
 
+}
+
+.slide-container .img-s{
+
+    width: 20% !important;
+    height: auto;
+    border: solid black;
+    display: block;
+    margin: 0 auto; /* Đưa hình ra giữa theo chiều ngang */
 }
 
 

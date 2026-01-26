@@ -35,6 +35,7 @@ $(async function () {
         {
             window.vi_dieu_khien.index_1 = $(this).data("index1");
             window.vi_dieu_khien.index_2 = 0; // Reset về slide đầu tiên
+            
             window.vi_dieu_khien.loadContent();
             console.log(window.vi_dieu_khien)
         }
