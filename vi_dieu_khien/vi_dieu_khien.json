@@ -18,9 +18,28 @@
     "ai_link":"link-3"
   },
   {
-    "title": "Bài 4: Lập trình Arduino",
+    "title": "Bài 4: Lập trình bằng sơ đồ giải thuật",
     "folder": "bai4",
     "pages": ["bai4.md", "bai4_1.md","bai4_2.md","bai4_3.md","bai4_4.md","bai4_5.md","bai4_6.md"],
     "ai_link":"link-4"
+  },
+  {
+    "title": "Bài 5: Lập trìnhh arduino cơ bản",
+    "folder": "bai5",
+    "pages": ["bai5.md", "bai5_1.md","bai5_2.md","bai5_3.md","bai5_4.md","bai5_5.md","bai5_6.md"],
+    "ai_link":"link-5"
+  },
+  {
+    "title": "Bài 6: Lập trình IO",
+    "folder": "bai6",
+    "pages": ["bai6.md", "bai6_1.md","bai6_2.md","bai6_3.md","bai6_4.md"],
+    "ai_link":"link-6"
+  },
+   {
+    "title": "Bài 7: Điều khiển động cơ",
+    "folder": "bai7",
+    "pages": ["bai7.md", "bai7_1.md","bai7_2.md","bai7_3.md"],
+    "ai_link":"link-7"
   }
+  
 ]
