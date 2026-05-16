@@ -1,7 +1,9 @@
+window.course="";
 
 $(async function () {
     
     await window.vi_dieu_khien.init();
+    await window.lap_trinh_nhung.init();
 
     $(document).on("click", ".menu-2 li", function (e) {
         e.stopPropagation(); // QUAN TRỌNG: Ngăn không cho sự kiện lan lên li cha
@@ -14,30 +16,47 @@ $(async function () {
         console.log("Bài học lớn (index_1):", parentIndex);
         console.log("Link chi tiết (index_2):", subIndex);
 
-        // 3. Cập nhật đồng thời cả 2 chỉ số trước khi load nội dung
-        window.vi_dieu_khien.index_1 = parentIndex;
-        window.vi_dieu_khien.index_2 = subIndex;
-
-        window.vi_dieu_khien.loadContent();
-        // // Cập nhật giao diện active cho link con
+        if(window.course=="vi_dieu_khien")
+        {
+            // 3. Cập nhật đồng thời cả 2 chỉ số trước khi load nội dung
+            window.vi_dieu_khien.index_1 = parentIndex;
+            window.vi_dieu_khien.index_2 = subIndex;
+            window.vi_dieu_khien.loadContent();
+        }
+        else if(window.course=="lap_trinh_nhung")
+        {
+            window.lap_trinh_nhung.index_1 = parentIndex;
+            window.lap_trinh_nhung.index_2 = subIndex;
+            window.lap_trinh_nhung.loadContent();
+        }
+        
         $(".menu-2 li").removeClass("active-sub");
         $(this).addClass("active-sub");
+        // // Cập nhật giao diện active cho link con
     });
 
 
 
-    
     $(document).on("click", ".menu > li", function (e) {
         if ($(e.target).closest('.menu-2').length) return;
 
-        const dir_name=$(this).data("dir");        
+        const dir_name=$(this).data("dir");
+        window.course=dir_name;
+
         if(dir_name=="vi_dieu_khien")
         {
             window.vi_dieu_khien.index_1 = $(this).data("index1");
             window.vi_dieu_khien.index_2 = 0; // Reset về slide đầu tiên
-            
             window.vi_dieu_khien.loadContent();
-            console.log(window.vi_dieu_khien)
+            window.course=dir_name
+            //console.log(window.vi_dieu_khien)
+        }
+        else if(dir_name=="lap_trinh_nhung")
+        {
+            window.lap_trinh_nhung.index_1 = $(this).data("index1");
+            window.lap_trinh_nhung.index_2 = 0; // Reset về slide đầu tiên
+            window.lap_trinh_nhung.loadContent();
+            //console.log(window.lap_trinh_nhung)
         }
         else
         {
@@ -83,3 +102,8 @@ function toggleRight() {
           leftMenu.classList.remove('active');
     }
 }
+
+
+
+
+

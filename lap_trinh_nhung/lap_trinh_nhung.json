@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Bài 1: Project 1",
+    "folder": "bai1",
+    "pages": ["bai1_1.md","bai1_2.md","bai1_3.md"],
+    "ai_link":"ai-lap-trinh-nhung-1"
+  },
+
+  {
+    "title": "Bài 2: Project 2",
+    "folder": "bai2",
+    "pages": ["bai2_1.md","bai2_2.md","bai2_3.md","bai2_4.md"],
+    "ai_link":"ai-lap-trinh-nhung-1"
+  }
+
+
+]
