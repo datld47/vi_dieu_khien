@@ -40,6 +40,12 @@
     "folder": "bai7",
     "pages": ["bai7.md", "bai7_1.md","bai7_2.md","bai7_3.md","bai7_4.md"],
     "ai_link":"link-7"
+  },
+  {
+    "title": "Bài 8: Giao tiếp với LCD và cảm biến",
+    "folder": "bai8",
+    "pages": ["bai8.md", "bai8_1.md"],
+    "ai_link":"link-8"
   }
   
 ]
