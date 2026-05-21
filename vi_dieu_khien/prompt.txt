@@ -1,0 +1,4 @@
+Tôi đang dạy lập trình vi điều khiển cho ô tô . Dựa vào tài liệu tôi cung cấp hãy thiết kế slide theo các tiêu chí sau
+- Slide có chữ to , rõ , hình ảnh sắc nét
+- Slide thiết kế phải đúng theo nguyên tắc sư phạm : thiết kế cho kỹ sư thực hành step by step  từ nguyên lý , đến các bước thực hiện  đều phải ghi rõ các bước. Cấp độ thiết kế dựa trên thang bloom hiểu và áp dụng được
+- Slied phải bao quát tất cả nội dung tôi cung cấp không được bỏ sót phần nào. **tuyệt đối không vì rút gọn slide mà bỏ sót nội dụng**
